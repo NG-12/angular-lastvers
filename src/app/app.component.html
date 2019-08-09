@@ -1,0 +1,26 @@
+<app-top-bar></app-top-bar>
+<div>
+    <ng-sidebar-container style=" height: 100vh" >
+    <ng-sidebar [(opened)]="_opened" mode="push" autoCollapseWidth=100 >
+
+      <h2>Sidebar contents</h2>
+      <p>Sidebar contents</p>
+      <p>Sidebar contents</p>
+      <p>Sidebar contents</p>
+      <p>Sidebar contents</p>
+
+    </ng-sidebar>
+
+
+<div ng-sidebar-content>
+  <button (click)="_toggleSidebar()">>>></button>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div >
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
