@@ -2,12 +2,12 @@
 <h1>Welcome to the Lord of the Node!</h1>
   <label name="check1">Please, write down below the name of the node</label>
   <p>
-    <input type="text" id="name_of_the_node" >
+    <input type="text" [(ngModel)]="groupName">
   </p>
 
    <button (click)="submit()">
     Submit
   </button>
   <p>
-    <label name="check2" ></label>
+    {{response}}
   </p>

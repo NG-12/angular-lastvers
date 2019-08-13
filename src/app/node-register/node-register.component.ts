@@ -11,20 +11,11 @@ import {Node} from './node';
 
 export class NodeRegisterComponent {
 
-  noder: Node=new Node(); // данные вводимого пользователя
-  
-    done: boolean = false;
-    constructor(private httpService: HttpService){}
-    submit(noder: Node){
-        this.httpService.postData(noder)
-                .subscribe(
-                    (data: Node) => window.alert(data),
-                    error => console.log(error)
-                );
-    }
-  //constructor() { }
-  
-  //ngOnInit() {
-  //}
+  groupName: string;
+  response: any;
+  constructor(private httpService: HttpService){}
+  submit(){
+
+  }
   
 }
